@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+*{
+    font-family: "Amatic SC", cursive;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    background-color: rgb(175, 184, 182);
+}
+.box{
+    background-size : cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 32px;
+    height: 100vh;
+    color: white;
+    flex: 1;
+    text-shadow: 1px 2px 5px black;
+    transition: 1.5s;
+}
+.box h2{
+    font-size:23px ;
+    opacity: 0;
+}
+.zoom{
+    flex: 5;
+}
+.box.zoom h2{
+    opacity: 1;
+    transition: opacity .9s ease-in .7s;
+    font-size: 32px;
+}
+
+
+
+
