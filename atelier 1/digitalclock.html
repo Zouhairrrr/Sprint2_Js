@@ -1,0 +1,47 @@
+<div class="fulltime">
+	<div id="time"></div>
+	<div id="nightorday"></div>
+</div>
+<style>
+    body{
+        background-color: black;
+    }
+    .fulltime{
+    	color:#17d3fd;
+    	font-size:80px;
+    	display:flex;
+    	justify-content: center;
+    }
+    .fulltime *{
+    	display:inline-block;
+    }
+    #nightorday{
+    	margin-left:23px;
+    }
+</style>
+<script>
+    function getTime(){
+
+    let myDate = new Date(),
+    startH = myDate.getHours(),
+    startM = myDate.getMinutes(),
+    startS = myDate.getSeconds();
+
+    if (startH < 10)  startH = '0' + startH;
+    if (startM < 10)  startM = '0' + startM;
+    if (startS < 10)  startS = '0' + startS;
+
+    document.getElementById("time").innerHTML = startH + ":" + startM + ":" + startS;
+
+    if (startH > 12) { 
+            document.getElementById('nightorday').innerHTML = 'PM'; 
+        }
+        else { 
+            document.getElementById('nightorday').innerHTML = 'AM'; 
+        };
+    
+	};
+
+    // call getTime function every 1 second
+    setInterval('getTime()', 1000); 	
+</script>
