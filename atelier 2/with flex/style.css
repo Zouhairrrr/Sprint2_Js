@@ -15,7 +15,7 @@ body{
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     cursor: pointer;
     font-size: 32px;
@@ -35,7 +35,7 @@ body{
 .box.zoom h2{
     opacity: 1;
     transition: opacity .9s ease-in .7s;
-    font-size: 32px;
+    font-size: 60px;
 }
 
 
