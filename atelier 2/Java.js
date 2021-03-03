@@ -1,14 +1,19 @@
 
 
-var Slid = document.querySelectorAll(".Photos");
-// console.log(Slid)
+var Slide = document.querySelectorAll(".Photos");
 
 
 
-Slid.forEach(Photos => Photos.addEventListener('click' ,show));
+
+Slide.forEach(Photo => Photo.addEventListener('click' ,show));
 function show(){
-
-    this.classList.toggle("Overview");
-
+    this.classList.toggle("Overview")
 };
 
+ 
+// var Slide = document.getElementsByTagName(".P");
+
+// Slide.forEach(Element => Element.addEventListener('' ,Getout));
+// function Getout(){
+// this.classList.toggle("Outover")
+// };
