@@ -30,17 +30,17 @@ body{
     overflow:hidden;
 }
 .box{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-background-position: center;
-background-size: cover;
-flex:1;
-color: white;
-font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    flex:1;
+    color: white;
+    font-size: 20px;
 
-transition: all 0.4s 0s ease-in-out;
+    transition: all 0.4s 0s ease-in-out;
 }
 
 .box p{
